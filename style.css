@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+section{
+    margin: 0px .7rem;
+}
+.h1txt{
+    /* border: 2px solid red; */
+    margin:  auto;
+    width: 100vw;
+    height: auto;
+}
+h1{
+    /* border: 2px solid red; */
+    margin: 1rem auto; 
+    text-align: center;
+}
+.container {
+    max-width: 23rem;
+    margin: 6rem auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+
+#display {
+    text-align: right;
+    height: 7rem;
+    line-height: 1rem;
+    padding: 3rem 1.5rem;
+    font-size: 2.3rem;
+}
+
+.buttons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+.button {
+    border: 0.5px solid #999;
+    line-height: 6rem;
+    text-align: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#equal {
+    background-color: rgb(85, 85, 255);
+    color: white;
+}
+
+.button:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
