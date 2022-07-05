@@ -1,0 +1,29 @@
+*{
+    outline: 2px solid;
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.output{
+    font-size: 1.5rem;
+    text-align: end;
+    padding: 1rem;
+}
+button{
+    outline: 1px solid;
+    font-size: 1.3rem;
+    border: none;
+    padding: 1rem;
+}
+section{
+    display: grid;
+    grid-template-rows:repeat(6, 80%);
+    grid-template-columns: repeat(4, 1fr)
+}
