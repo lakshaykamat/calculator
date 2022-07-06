@@ -39,6 +39,7 @@ main {
   color: #fff;
 }
 .current-operation {
+  word-break: normal;
     margin: .3rem;
   font-weight: bolder;
   color: white;
@@ -79,11 +80,11 @@ button:hover {
 }
 
 .equal {
-    background-color: #00c9ff;;
+    background-color: #28d448;
     grid-column-start: 3;
     grid-column-end: 5;
 }
 .equal:hover{
     color: #000;
-    background-color: #00b4e6;;
+    background-color: #15ab30;
 }

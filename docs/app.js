@@ -9,11 +9,13 @@ button.map(function (button) {
     switch (e.target.textContent) {
       case "AC":
         currentOpBtn.textContent = ""
+        previousOpBtn.textContent = ""
         break
       case "DEL":
         currentOpBtn.textContent = currentOpBtn.textContent.slice(0, -1);
         break
         case '=':
+          previousOpBtn.textContent = currentOpBtn.textContent
             try{
                 currentOpBtn.textContent = eval(currentOpBtn.textContent)
             }
