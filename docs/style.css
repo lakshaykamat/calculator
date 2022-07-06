@@ -1,47 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Mingzat&display=swap');
 *{
     font-family: 'Mingzat', sans-serif;
-    outline: 2px solid green ;
     transition: .5s ease;
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+main{
+    padding: .5rem;
+    outline:2px solid #fff
+}
 .output{
-    background-color: #444;
+    font-weight: bolder;
+    background-color: rgb(141, 140, 140);
     color: white;
     font-size: 1.4rem;
     text-align: end;
     padding: 1rem;
 }
 button{
-    /* background-color: #fff; */
-    /* outline: 1px solid green; */
+    font-weight: bold;
     font-size: 1.2rem;
     border: none;
     padding: 1rem;
     transition: none;
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.43);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(1.9px);
--webkit-backdrop-filter: blur(1.9px);
-border: 1px solid rgba(255, 255, 255, 0.18);
 }
 button:hover{
     background-color: rgb(215, 215, 215);
 }
+@media screen and (max-width:400px) {
+    button{
+        font-size: 1rem;
+        padding: .7rem;
+    }
+}
+
 section{
-    padding: 1rem;
+    padding-top:.5rem ;
     display: grid;
-    grid-gap: 6px;
+    grid-gap: 3px;
     grid-template:repeat(6, 80%) /  repeat(4, 1fr);
 }
 .equal{
